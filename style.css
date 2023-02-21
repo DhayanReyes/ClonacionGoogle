@@ -1,0 +1,198 @@
+
+/*Apartado el estilo de todo el documento*/
+body{
+margin: 0;
+padding: 0;
+font-size: 13px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+width: 100%;
+height: 60px;
+}
+
+header nav{
+    display: flex; /*Comando para agrupar y alinear componentes*/
+    justify-content: flex-end; /*Todo lo del hearder se direcciona hacia la derecha*/
+}
+
+a{
+ text-decoration: none;  /*Quitar hipervinculo*/
+ cursor: pointer; /*Hace que aparezca la manita al momento de seleccionar las opciones de la izquiera superior */
+}
+
+header nav .nav-right-section{
+width: 250px;
+height: auto;
+display: flex;
+list-style: none;
+justify-content: center;
+align-items: center;
+}
+
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: black;
+}
+
+nav .nav-right-section img{
+    border-radius: 80px;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+
+nav .nav-right-section .menu-icon{
+background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+height: 27px;
+width: 27px;
+}
+
+
+main{
+    margin-top: 80px; /*Se desplaza 80 px de hacia abajo respecto el borde superior*/
+    text-align: center; /*Se coloca imagen en centro, y todo lo que este en main*/
+}
+
+main .main-logo{  
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+
+main .main-logo img{ /*Ancho y largo logo de Google*/
+    width: 330px;
+    height: 125px;
+}
+
+
+main .main-input{ 
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px; /*Desplaza los botones hacia abajo*/
+}
+
+main .main-input-conteiner{
+    width: 525px; /*Largo de barra de búsqueda*/
+    border-radius: 100px; /*Se hizo un borden rendodeado*/
+    border: 1px solid #ffffff; /*Color de borde y ancho*/
+    display: flex;
+    justify-content: center; /*Se coloca en centro*/
+    align-items: center;
+
+}
+
+main .main-input input{ /*Aquí se quitó el fondo de la barra y se colocó las medidas*/
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+} 
+
+main .main-input-conteiner:hover{
+    box-shadow: 0 1px 6px 0 #20212447; /*Estilo de caja de búsqueda de Google para hacer que aparezca la sombra al poner el cursor*/
+
+}
+
+
+main .main-input .search-icon{ /*Imagen de Buscar*/
+    background-image: url('https://img.icons8.com/android/24/000000/search.png'); /*Dirección de imagen dentro de barra*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon{ /*Imagen de Micrófono*/
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');/*Dirección de imagen dentro de barra*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+
+
+main .main-input .cam-icon{ /*Imagen de Cámara*/
+    background-image: url('https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg');/*Dirección de imagen dentro de barra*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+}
+
+main .main-input a{/*Separar imagen de cámara y micrófono*/
+    margin: 10px;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block; /*Se colocan los botones en una sola línea*/
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 6px;
+    padding: 0 15px; /*Permite que las letras se junten*/
+    margin-right: 12px; /*Separa los botones en la línea*/
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0.5px 1px 0 #000001;
+    color: #222;
+    cursor: pointer;/*Cambia de flecha a manita*/
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Se crean columnas*/
+    align-items: center;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+margin: 10px; /*Separa los elementos*/
+color: #5f6368; 
+}
+
