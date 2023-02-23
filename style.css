@@ -110,6 +110,7 @@ main .main-input .search-icon{ /*Imagen de Buscar*/
     background-size: contain;
     width: 18px;
     height: 18px;
+    margin-left: 15px;
 }
 
 main .main-input .micro-icon{ /*Imagen de Micrófono*/
